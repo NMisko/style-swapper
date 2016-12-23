@@ -1,0 +1,18 @@
+{
+  "name": "style-swapper",
+  "main": "./lib/style-swapper",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "style-swapper:toggle"
+  },
+  "repository": "https://github.com/NMisko/style-swapper",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

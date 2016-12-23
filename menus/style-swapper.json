@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle style-swapper",
+        "command": "style-swapper:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "style-swapper",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "style-swapper:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
