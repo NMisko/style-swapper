@@ -23,7 +23,7 @@ describe('StyleSwapper', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'style-swapper:toggle');
+      atom.commands.dispatch(workspaceElement, 'style-swapper:Swap');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('StyleSwapper', () => {
 
         let styleSwapperPanel = atom.workspace.panelForItem(styleSwapperElement);
         expect(styleSwapperPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'style-swapper:toggle');
+        atom.commands.dispatch(workspaceElement, 'style-swapper:Swap');
         expect(styleSwapperPanel.isVisible()).toBe(false);
       });
     });

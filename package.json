@@ -6,7 +6,7 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "style-swapper:toggle"
+    "atom-workspace": "style-swapper:Swap"
   },
   "repository": "https://github.com/NMisko/style-swapper",
   "license": "MIT",
@@ -14,5 +14,9 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "fuzzaldrin": "^2.1.0",
+    "fuzzaldrin-plus": "^0.4.1",
+    "atom-select-list": "0.0.5",
+    "underscore-plus": "^1.0.0"
   }
 }
