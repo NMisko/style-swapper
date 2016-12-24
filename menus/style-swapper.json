@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle style-swapper",
-        "command": "style-swapper:toggle"
+        "label": "Open style profiles",
+        "command": "style-swapper:Swap"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "style-swapper",
+          "label": "Style Swapper",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "style-swapper:toggle"
+              "label": "Swap",
+              "command": "style-swapper:Swap"
             }
           ]
         }
