@@ -1,10 +1,9 @@
 {
   "name": "style-switcher",
   "main": "./lib/style-switcher",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Allows to quickly switch between styles.",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "style-switcher:Switch"
   },
