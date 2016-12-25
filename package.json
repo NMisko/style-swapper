@@ -1,14 +1,14 @@
 {
-  "name": "style-swapper",
-  "main": "./lib/style-swapper",
+  "name": "style-switcher",
+  "main": "./lib/style-switcher",
   "version": "0.0.0",
   "description": "Allows to quickly switch between styles.",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "style-swapper:Swap"
+    "atom-workspace": "style-switcher:Switch"
   },
-  "repository": "https://github.com/NMisko/style-swapper",
+  "repository": "https://github.com/NMisko/style-switcher",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

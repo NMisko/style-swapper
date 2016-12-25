@@ -1,44 +1,44 @@
 'use babel';
 
-import StyleSwapper from '../lib/style-swapper';
+import StyleSwitcher from '../lib/style-switcher';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('StyleSwapper', () => {
+describe('StyleSwitcher', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('style-swapper');
+    activationPromise = atom.packages.activatePackage('style-switcher');
   });
 
-  describe('when the style-swapper:toggle event is triggered', () => {
+  describe('when the style-switcher:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.style-swapper')).not.toExist();
+      expect(workspaceElement.querySelector('.style-switcher')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'style-swapper:Swap');
+      atom.commands.dispatch(workspaceElement, 'style-switcher:Switch');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.style-swapper')).toExist();
+        expect(workspaceElement.querySelector('.style-switcher')).toExist();
 
-        let styleSwapperElement = workspaceElement.querySelector('.style-swapper');
-        expect(styleSwapperElement).toExist();
+        let styleSwitcherElement = workspaceElement.querySelector('.style-switcher');
+        expect(styleSwitcherElement).toExist();
 
-        let styleSwapperPanel = atom.workspace.panelForItem(styleSwapperElement);
-        expect(styleSwapperPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'style-swapper:Swap');
-        expect(styleSwapperPanel.isVisible()).toBe(false);
+        let styleSwitcherPanel = atom.workspace.panelForItem(styleSwitcherElement);
+        expect(styleSwitcherPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'style-switcher:Switch');
+        expect(styleSwitcherPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('StyleSwapper', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.style-swapper')).not.toExist();
+      expect(workspaceElement.querySelector('.style-switcher')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'style-swapper:toggle');
+      atom.commands.dispatch(workspaceElement, 'style-switcher:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('StyleSwapper', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let styleSwapperElement = workspaceElement.querySelector('.style-swapper');
-        expect(styleSwapperElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'style-swapper:toggle');
-        expect(styleSwapperElement).not.toBeVisible();
+        let styleSwitcherElement = workspaceElement.querySelector('.style-switcher');
+        expect(styleSwitcherElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'style-switcher:toggle');
+        expect(styleSwitcherElement).not.toBeVisible();
       });
     });
   });

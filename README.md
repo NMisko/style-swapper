@@ -1,4 +1,4 @@
-# style-swapper package
+# Atom style-switcher package
 
 Allows to quickly switch between styles.
 

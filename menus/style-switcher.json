@@ -3,7 +3,7 @@
     "atom-text-editor": [
       {
         "label": "Open style profiles",
-        "command": "style-swapper:Swap"
+        "command": "style-switcher:Switch"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "Style Swapper",
+          "label": "Style Switcher",
           "submenu": [
             {
-              "label": "Swap",
-              "command": "style-swapper:Swap"
+              "label": "Switch",
+              "command": "style-switcher:Switch"
             }
           ]
         }
