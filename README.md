@@ -2,7 +2,7 @@
 
 Allows to quickly switch between styles.
 
-[![Screenshot](https://i.gyazo.com/29ee8101ef122fd85c8ede48cc96b6a1.gif)]
+![Usage](https://raw.githubusercontent.com/NMisko/style-switcher/master/images/example.gif)
 
 WARNING: Writes inside your stylesheet.
 
