@@ -6,7 +6,7 @@ Allows to quickly switch between styles.
 
 WARNING: Writes inside your stylesheet.
 
-Surround parts of your style sheet with the delimiters, e.g.:
+Surround parts of your style sheet with the delimiters and give them names of your choice, e.g.:
 ```
 //--- coding
 atom-text-editor {
@@ -21,7 +21,7 @@ atom-text-editor {
 //}
 //-
 ```
-You can then switch between `coding` and `writing`. The package simply comments out the block that isn't used. The delimiters can be set in the settings. It's also possible to assign one block to multiple names, e.g.:
+You can then for example switch between `coding` and `writing`. You can freely choose these names and add as many as you want. The package simply comments out the blocks that aren't used. All delimiters can be set in the settings. It's also possible to assign one block to multiple names, e.g.:
 ```
 //--- writing,coding,reading
 atom-text-editor {
