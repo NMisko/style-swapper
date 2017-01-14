@@ -1,7 +1,7 @@
 {
   "name": "style-switcher",
   "main": "./lib/style-switcher",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Allows to quickly switch between styles.",
   "keywords": [],
   "activationCommands": {
